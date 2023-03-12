@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main--body">
+        <center>
+            <div class="heading">
+                <h1>Basic Calculator</h1>
+                <p>Based on JS eval function</p>
+            </div>
+
+            <div class="calc">
+                <div class="output">
+                    <input type="text" id="screen" class="screen">
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <button class="btn" onclick="clickButton(9)">9</button>
+                        <button class="btn" onclick="clickButton(8)">8</button>
+                        <button class="btn" onclick="clickButton(7)">7</button>
+                        <button class="btn" onclick="clickButton('+')">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="clickButton(6)">6</button>
+                        <button class="btn" onclick="clickButton(5)">5</button>
+                        <button class="btn" onclick="clickButton(4)">4</button>
+                        <button class="btn" onclick="clickButton('-')">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="clickButton(3)">3</button>
+                        <button class="btn" onclick="clickButton(2)">2</button>
+                        <button class="btn" onclick="clickButton(1)">1</button>
+                        <button class="btn" onclick="clickButton('*')">X</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="clickButton('.')">0.</button>
+                        <button class="btn" onclick="clickButton(0)">0</button>
+                        <button class="btn" onclick="getResult('=')">=</button>
+                        <button class="btn" onclick="clickButton('/')">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="clearDisplay()">C</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </center>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
